@@ -1,3 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1767582367
+::res://::1767583620
 icon.svg::CompressedTexture2D::3226939760442214905::1767582359::1767582369::1::::<><><>0<>0<>590b7c1c0f527d208b4dbcf61678c73e<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Images/::1767583298
+wooden_letter_base.png::CompressedTexture2D::1837675076343499412::1767299468::1767583298::1::::<><><>0<>0<>fce717942ffc375c9a8553e39c6fd506<>res://.godot/imported/wooden_letter_base.png-86fa890fb0e26bf7b2307e40553fe80d.ctex::
+::res://Scenes/::1767583622
+level_select_screen.tscn::PackedScene::6484776011818233375::1767583622::0::1::::<><><>0<>0<><>::uid://1ggifpy7k71q::::res://Images/wooden_letter_base.png
+level_select_screen.gd::GDScript::4335757900488741242::1767583687::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scripts/::0
