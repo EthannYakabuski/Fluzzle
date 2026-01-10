@@ -1,8 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cynjkwm5vbhop"]
+[gd_scene load_steps=4 format=3 uid="uid://cynjkwm5vbhop"]
 
 [ext_resource type="Script" uid="uid://b21jkf3e2ei1w" path="res://Scripts/level_select_screen.gd" id="1_friyl"]
 [ext_resource type="PackedScene" uid="uid://ehjaj4767xcd" path="res://Scenes/level_button.tscn" id="2_friyl"]
+[ext_resource type="Script" uid="uid://bs41aj50rg3g2" path="res://addons/GodotPlayGameServices/scripts/sign_in/sign_in_client.gd" id="3_llw02"]
 
 [node name="LevelSelectScreen" type="Node2D"]
 script = ExtResource("1_friyl")
 levelSelectButton = ExtResource("2_friyl")
+
+[node name="PlayGamesSignInClient" type="Node" parent="."]
+script = ExtResource("3_llw02")
+metadata/_custom_type_script = "uid://bs41aj50rg3g2"

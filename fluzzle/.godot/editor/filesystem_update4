@@ -1,5 +1,3 @@
+res://Scenes/level_button.tscn
 res://Scenes/level_select_screen.tscn
 res://Scripts/level_select_screen.gd
-res://Scenes/level_button.tscn
-res://Scenes/level_button.gd
-res://Scenes/game_screen.tscn

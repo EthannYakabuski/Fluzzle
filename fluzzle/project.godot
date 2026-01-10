@@ -15,6 +15,11 @@ run/main_scene="uid://cynjkwm5vbhop"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameState="*res://Scripts/game_state.gd"
+GodotPlayGameServices="*res://addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd"
+
 [display]
 
 window/size/viewport_width=1080
@@ -22,6 +27,11 @@ window/size/viewport_height=1920
 window/stretch/mode="viewport"
 window/handheld/orientation=1
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GodotPlayGameServices/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

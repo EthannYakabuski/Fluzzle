@@ -1,6 +1,7 @@
 extends TextureButton
 
 var level
+signal levelSelected
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,3 +17,5 @@ func setLevel(levelToSet) -> void:
 func _on_pressed() -> void:
 	print("level button pressed")
 	print("loading level: " + level)
+	GameState.setLevelToLoad(level)
+	levelSelected.emit()
