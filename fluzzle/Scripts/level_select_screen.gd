@@ -41,3 +41,9 @@ func levelHasBeenSelected() -> void:
 	get_tree().change_scene_to_packed(game_scene)
 	
 	
+func _on_achievement_button_pressed() -> void:
+	$PlayGamesAchievementsClient.show_achievements()
+
+
+func _on_leaderboard_button_pressed() -> void:
+	$PlayGamesLeaderboardsClient.show_all_leaderboards()
