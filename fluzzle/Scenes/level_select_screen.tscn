@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://cynjkwm5vbhop"]
+
+[ext_resource type="Script" uid="uid://b21jkf3e2ei1w" path="res://Scripts/level_select_screen.gd" id="1_friyl"]
+[ext_resource type="PackedScene" uid="uid://ehjaj4767xcd" path="res://Scenes/level_button.tscn" id="2_friyl"]
+[ext_resource type="Script" uid="uid://bs41aj50rg3g2" path="res://addons/GodotPlayGameServices/scripts/sign_in/sign_in_client.gd" id="3_llw02"]
+[ext_resource type="Texture2D" uid="uid://uish815shxe2" path="res://Images/achievements.png" id="4_4vh6t"]
+[ext_resource type="Script" uid="uid://biqyby7urxd8y" path="res://addons/GodotPlayGameServices/scripts/achievements/achievements_client.gd" id="4_arfpd"]
+[ext_resource type="Texture2D" uid="uid://cw05q8crg3s5i" path="res://Images/leaderboards.png" id="5_n1tgt"]
+[ext_resource type="Script" uid="uid://bot20bm8u81fa" path="res://addons/GodotPlayGameServices/scripts/leaderboards/leaderboards_client.gd" id="5_v3jcn"]
+
+[node name="LevelSelectScreen" type="Node2D"]
+script = ExtResource("1_friyl")
+levelSelectButton = ExtResource("2_friyl")
+
+[node name="PlayGamesSignInClient" type="Node" parent="."]
+script = ExtResource("3_llw02")
+metadata/_custom_type_script = "uid://bs41aj50rg3g2"
+
+[node name="AchievementButton" type="TextureButton" parent="."]
+offset_left = 857.0
+offset_top = 1677.0
+offset_right = 1881.0
+offset_bottom = 2701.0
+scale = Vector2(0.225, 0.225)
+texture_normal = ExtResource("4_4vh6t")
+
+[node name="LeaderboardButton" type="TextureButton" parent="."]
+offset_left = 670.0
+offset_top = 1676.0
+offset_right = 1694.0
+offset_bottom = 2700.0
+scale = Vector2(0.22, 0.22)
+texture_normal = ExtResource("5_n1tgt")
+
+[node name="PlayGamesAchievementsClient" type="Node" parent="."]
+script = ExtResource("4_arfpd")
+metadata/_custom_type_script = "uid://biqyby7urxd8y"
+
+[node name="PlayGamesLeaderboardsClient" type="Node" parent="."]
+script = ExtResource("5_v3jcn")
+metadata/_custom_type_script = "uid://bot20bm8u81fa"
+
+[connection signal="pressed" from="AchievementButton" to="." method="_on_achievement_button_pressed"]
+[connection signal="pressed" from="LeaderboardButton" to="." method="_on_leaderboard_button_pressed"]
