@@ -15,6 +15,10 @@ func _on_button_pressed() -> void:
 	$PlayGamesAchievementsClient.unlock_achievement("CgkI6rzk5YofEAIQAQ")
 	$PlayGamesAchievementsClient.increment_achievement("CgkI6rzk5YofEAIQAg", 1)
 	calculatePlayerScore()
+	var currentData = PlayerData.getData()
+	currentData["LevelsCompleted"].push_back(int(currentLevel))
+	PlayerData.setData(currentData)
+	PlayerData.saveData()
 	get_tree().change_scene_to_file("res://Scenes/level_select_screen.tscn")
 	
 func calculatePlayerScore() -> void: 

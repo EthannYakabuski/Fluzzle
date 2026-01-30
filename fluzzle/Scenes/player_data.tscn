@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ee55osiq2x75"]
+
+[ext_resource type="Script" uid="uid://c1iwtfd6x0o5u" path="res://player_data.gd" id="1_fshu5"]
+[ext_resource type="Script" uid="uid://gg2qi4ui08y6" path="res://addons/GodotPlayGameServices/scripts/snapshots/snapshots_client.gd" id="2_fshu5"]
+
+[node name="PlayerData" type="Node2D"]
+script = ExtResource("1_fshu5")
+
+[node name="PlayGamesSnapshotsClient" type="Node" parent="."]
+script = ExtResource("2_fshu5")
+metadata/_custom_type_script = "uid://gg2qi4ui08y6"

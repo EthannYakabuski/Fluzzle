@@ -40,5 +40,6 @@ metadata/_custom_type_script = "uid://biqyby7urxd8y"
 script = ExtResource("5_v3jcn")
 metadata/_custom_type_script = "uid://bot20bm8u81fa"
 
+[connection signal="user_authenticated" from="PlayGamesSignInClient" to="." method="_on_play_games_sign_in_client_user_authenticated"]
 [connection signal="pressed" from="AchievementButton" to="." method="_on_achievement_button_pressed"]
 [connection signal="pressed" from="LeaderboardButton" to="." method="_on_leaderboard_button_pressed"]
